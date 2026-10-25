@@ -1,0 +1,18 @@
+# Манифест плагина Lora. Справочник по полям: docs/plugins/README.md, раздел 4.
+id = "my-plugin"
+name = "Мой плагин"
+version = "0.1.0"
+api = 1
+description = "Коротко: что делает плагин"
+author = "Ваше имя"
+# os = ["macos", "windows"]   # пусто — все системы
+permissions = []               # network, clipboard, files, system, notifications, media
+# network = ["api.example.com"]  # белый список доменов для http_request
+
+[[commands]]
+id = "hello"
+title = { ru = "Привет от плагина", en = "Hello from a plugin" }
+description = { ru = "Отвечает приветствием", en = "Replies with a greeting" }
+triggers = { ru = ["привет плагин", "поздоровайся [с] {name}"], en = ["hello plugin", "say hello to {name}"] }
+examples = { ru = ["привет плагин"], en = ["hello plugin"] }
+args = { type = "object", properties = { name = { type = "string", description = "Кого поприветствовать" } } }

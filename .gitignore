@@ -1,0 +1,3 @@
+plugin.wasm
+dist/
+.DS_Store

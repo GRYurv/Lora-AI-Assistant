@@ -1,0 +1,19 @@
+id = "coin-flip"
+name = "Монетка"
+version = "1.0.0"
+api = 1
+description = "Подбрасывает монетку и запоминает, сколько раз"
+author = "Lora"
+permissions = []
+
+[[commands]]
+id = "flip"
+title = { ru = "Монетка из плагина", en = "Plugin coin flip" }
+description = { ru = "Подбросить монетку (пример плагина)", en = "Flip a coin (plugin example)" }
+triggers = { ru = ["(подбрось|кинь) монетку плагином", "монетка плагин"], en = ["plugin coin flip"] }
+examples = { ru = ["монетка плагин"], en = ["plugin coin flip"] }
+
+[[commands]]
+id = "stats"
+title = { ru = "Сколько раз бросали монетку", en = "Coin flip count" }
+triggers = { ru = ["сколько раз бросали монетку"], en = ["how many coin flips"] }
